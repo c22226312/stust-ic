@@ -1,0 +1,1074 @@
+html, body, div, span, iframe, h1, h2, h4, h6, p, blockquote, a, em, img, ul, li, header, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    
+  }
+  
+  .nav {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+  
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  header, footer {
+    display: block;}
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #fffdf3;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  a {
+      color: #CCC;
+    text-decoration: none !important;
+  }
+  a:hover {
+      color: #F99;
+    text-decoration: none !important;
+  }
+  
+  h1, h2, h4, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  ul {
+    margin-bottom: 0px;
+  }
+  
+  p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  img {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Global Styles
+  --------------------------------------------- 
+  */
+  html,
+  body {
+    background: #feffff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body .page-content {
+    margin-top: 110px;
+    background-color: hsla(0, 0%, 64%, 0.463);
+    padding: 60px;
+    border-radius: 23px;
+  }
+  
+  p {
+    font-size: 15px;
+    color: #666;
+    line-height: 30px;
+    margin-bottom: 0px;
+  }
+  
+  ::selection {
+    background: #ff8024;
+    color: #fff;
+  }
+  
+  ::-moz-selection {
+    background: #ff8024;
+    color: #fff;
+  }
+  
+  .back-to-top {
+  
+    display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+    
+    position: fixed; /* 位置是固定的 */
+    
+    bottom: 20px; /* 顯示在頁面底部 */
+    
+    right: 30px; /* 顯示在頁面的右邊 */
+    
+    z-index: 99; /* 確保不被其他功能覆蓋 */
+    
+    border: 1px solid #ff8024; /* 顯示邊框 */
+    
+    outline: none; /* 不顯示外框 */
+    
+    background-color: #fff; /* 設置背景背景顏色 */
+    
+    color: #ff8024; /* 設置文本顏色 */
+    
+    cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+    
+    padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+    
+    border-radius: 10px; /* 增加圓角 */
+    
+    }
+    
+    .back-to-top:hover {
+    
+    background-color: #ff8024; /* 滑鼠移上去時，反轉顏色 */
+    
+    color: #fff;
+    
+    }
+    
+    
+  
+  .main-button a {
+    font-size: 14px;
+    color: #fff;
+    background-color: #2a7b52;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-button a:hover {
+    background-color: #fff;
+    color: #ff8024;
+  }
+  
+  .heading-section h4 {
+    color: #ff8024;
+    font-size: 34px;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+  
+  .heading-section h4 em {
+    color: #fff;
+    font-style: normal;
+    text-decoration: underline;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Pre-loader Style
+  --------------------------------------------- 
+  */
+  
+  .js-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.99);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+  }
+  
+  @-webkit-keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
+    }
+  }
+  
+  @keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
+    }
+  }
+  
+  @-webkit-keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+  }
+  
+  @keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+  }
+  
+  .preloader-inner {
+    position: relative;
+    width: 142px;
+    height: 40px;
+    background: transparent;
+  }
+  
+  .preloader-inner .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    background: #ff8024;
+    border-radius: 50%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation: dot 2.8s infinite;
+    animation: dot 2.8s infinite;
+  }
+  
+  .preloader-inner .dots {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    -webkit-animation: dots 2.8s infinite;
+    animation: dots 2.8s infinite;
+  }
+  
+  .preloader-inner .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    background: #ff8024;
+    border-radius: 50%;
+  }
+  
+  
+  
+  /* 
+  ---------------------------------------------
+  Header Style
+  --------------------------------------------- 
+  */
+  
+  
+  .header-area {
+    background-color: transparent;
+    position: absolute;
+    height: 70px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+  }
+  
+  .header-area .main-nav {
+    top:10;
+    min-height: 80px;
+    background: transparent;
+    display: flex;
+    padding: 15px 0px;
+    background-color: #ffffff;
+   
+  }
+  
+  
+  
+  .header-area .main-nav .logo {
+    
+    flex-basis: 5%;
+    margin-left: 0%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .header-area .main-nav .logo img {
+    width: 50px;
+  }
+  
+  .fa-brands,.fa-sharp{
+      font-size: 15px;
+      line-height: 15px;
+      position: absolute;	
+    
+  }
+  
+  /* 
+  ---------------------------------------------
+  手機板logo大小
+  --------------------------------------------- 
+  */
+  
+  .header-area .main-nav .nav {
+    display: inline-flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    vertical-align: middle;
+    text-align: middle;
+    margin-top: 0px;
+    margin-right: 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .header-area .main-nav .nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+  }
+  
+  .header-area .main-nav .nav li a {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgb(41, 41, 41);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border: transparent;
+    padding: 13px 13px;
+    border-radius: 18px;
+    letter-spacing: .5px;
+  }
+  
+  
+  
+  .nav .dropdown 
+  {
+      position: absolute;
+      left: 80%;
+      top: 50%;
+      width: 170px;
+      transform: translateX(-50%);
+      background-color: #ffffff;
+      border-style: double;
+      border-color:ff8024;
+      border-width:5px;
+      border-radius: 7px;
+  
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+  }
+  
+  .nav > li:hover .dropdown{
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+  }
+  
+  .nav .dropdown > li >a {
+      display:inline-block;
+      line-height: 10px;
+      padding: 8px 24px;
+      width: 150px;
+      transition: all 0.2s;
+  }
+  
+  .nav .dropdown > li > a:hover {
+      border-bottom-style: solid;
+      border-width:5px;
+      border-color: #2a7b52;
+      border-radius: 0px;
+  }
+  
+  .header-area .main-nav .nav li:hover a,
+  .header-area .main-nav .nav li a.active {
+    color: #ff8024 !important;
+  }
+  
+  .header-area .main-nav .menu-trigger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 23px;
+    width: 32px;
+    height: 40px;
+    text-indent: -9999em;
+    z-index: 99;
+    right: 20px;
+    display: none;
+  }
+  
+  .header-area .main-nav .menu-trigger span,
+  .header-area .main-nav .menu-trigger span:before,
+  .header-area .main-nav .menu-trigger span:after {
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    background-color: #ff8024;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+  }
+  
+  .header-area .main-nav .menu-trigger span:before,
+  .header-area .main-nav .menu-trigger span:after {
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    background-color: #ff8024;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    width: 75%;
+  }
+  
+  .header-area .main-nav .menu-trigger span:before,
+  .header-area .main-nav .menu-trigger span:after {
+    content: "";
+  }
+  
+  .header-area .main-nav .menu-trigger span {
+    top: 16px;
+  }
+  
+  .header-area .main-nav .menu-trigger span:before {
+    -moz-transform-origin: 33% 100%;
+    -ms-transform-origin: 33% 100%;
+    -webkit-transform-origin: 33% 100%;
+    transform-origin: 33% 100%;
+    top: -10px;
+    z-index: 10;
+  }
+  
+  .header-area .main-nav .menu-trigger span:after {
+    -moz-transform-origin: 33% 0;
+    -ms-transform-origin: 33% 0;
+    -webkit-transform-origin: 33% 0;
+    transform-origin: 33% 0;
+    top: 10px;
+  }
+  
+  .header-area.header-sticky {
+    min-height: 70px;
+  }
+  
+  .header-area.header-sticky .nav li a.active {
+    color: rgb(255, 255, 255);
+  }
+  
+  @media (max-width: 1200px) {
+    .header-area .main-nav .nav li {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .header-area .main-nav:before {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1181px) {
+    body .page-content {
+      margin-top: 110px;
+      background-color: hsla(0, 0%, 64%, 0.463);
+      padding: 30px;
+      border-radius: 23px;
+    }
+    
+    .header-area {
+      top: 0;
+    }
+    .header-area .main-nav {
+      
+      border-radius: 0px;
+  
+    }
+    .header-area .main-nav .nav {
+      height: auto;
+      flex-basis: 100%;
+    }
+    .header-area .main-nav .logo {
+      position: absolute;
+      padding-left:auto,0;
+      top: 15px;
+    }
+    .header-area.header-sticky .nav li a:hover,
+    .header-area.header-sticky .nav li a.active {
+      color: #ff8024!important;
+      opacity: 1;
+    }
+    
+    .header-area {
+      background-color: #ffffff;
+      padding: 0px 15px;
+      height: 80px;
+      box-shadow: none;
+      text-align: center;
+    }
+    .header-area .container {
+      padding: 0px;
+    }
+    .header-area .logo {
+      margin-left: 0px;
+  
+    }
+    .header-area .menu-trigger {
+      display: block !important;
+    }
+   
+    .header-area .main-nav .nav {
+      float: none;
+      width: 100%;
+      display: none;
+      -webkit-transition: all 0s ease 0s;
+      -moz-transition: all 0s ease 0s;
+      -o-transition: all 0s ease 0s;
+      transition: all 0s ease 0s;
+      margin-left: 0px;
+      text-align: center;
+    }
+    .header-area.header-sticky .nav {
+      margin-top: 65px !important;
+      text-align: center;
+    }
+  
+    .nav .dropdown 
+  {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 170px;
+      transform: translateX(-50%);
+      background-color: #ffffff;
+      border-style: double;
+      border-color:ff8024;
+      border-width:5px;
+      border-radius: 7px;
+  
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+  }
+  
+  .nav > li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+  
+  .nav .dropdown > li >a {
+      display:inline-block;
+      line-height: 10px;
+      padding: 8px 24px;
+      width: 150px;
+      transition: all 0.2s;
+  }
+  
+  .fa-brands,.fa-sharp{
+      font-size: 24px;
+      line-height: center;
+      position: relative;	
+      padding: 0px 15px;
+  }
+  
+  .nav .dropdown > li > a:hover {
+      border-bottom-style: solid;
+      border-width:5px;
+      border-color: #2a7b52;
+      border-radius: 0px;
+  }
+    .header-area .main-nav .nav li:first-child {
+      border-top: 1px solid #eee;
+    }
+    .header-area .main-nav .nav li {
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    .header-area .main-nav .nav li a {
+      height: 50px !important;
+      line-height: 50px !important;
+      padding: 0px !important;
+      border: none !important;
+      background: #fff !important;
+      color: #1e1e1e !important;
+    }
+    .header-area .main-nav .nav li a:hover {
+      background: #fff !important;
+      color: #ff8024!important;
+    }
+    .header-area .main-nav .nav li:last-child a:hover {
+      color: #ff8024 !important;
+      background-color: transparent !important;
+    }
+  }
+  
+  /* 
+  ---------------------------------------------
+  Banner Style
+  --------------------------------------------- 
+  */
+  
+  .main-banner {
+    background-image: url(../images/banner-bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 23px;
+    padding: 80px 60px;
+  }
+  .main-banner2 {
+    background-image: url(../images/ditu.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 23px;
+    padding: 80px 60px;
+  }
+  
+  .main-banner h6 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  
+  .main-banner h4 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Most Popular Style
+  --------------------------------------------- 
+  */
+  
+  .most-popular {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #1f2122;
+    border-radius: 23px;
+  }
+  
+  .most-popular .item {
+    background-color: #27292a;
+    padding: 30px 15px;
+    border-radius: 23px;
+    margin-bottom: 30px;
+  }
+  
+  .most-popular .item img {
+    border-radius: 23px;
+  }
+  .most-popular .item h4 a {
+    font-size: 25px;
+    color: #ff8024;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  
+  .most-popular .item h4 {
+    font-size: 25px;
+    color: #ff8024;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+  
+  .most-popular .item span {
+    font-size: 15px;
+    color: rgb(203, 203, 203);
+    display: block;
+    margin-top: 7px;
+    font-weight: 350;
+  }
+  
+  .instagram-media { 
+    margin: 0 auto !important; 
+    max-width: 100% !important;
+  }
+  
+  
+  /* 
+  ---------------------------------------------
+  Footer Style
+  --------------------------------------------- 
+  */
+  
+  .footer{
+    padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  
+  .footer p{
+      text-align: center;
+      color: #000;
+      font-size: 10px;
+      font-weight: bold;
+    padding-top: 20px;
+      line-height: 20px;
+  
+       word-wrap:break-word;
+  }
+  .footer-logo{
+      width: 250px;
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+  /* 
+  ---------------------------------------------
+  Featured Games Style
+  --------------------------------------------- 
+  */
+  
+  /* 
+  ---------------------------------------------
+  Start Stream Style
+  --------------------------------------------- 
+  */
+  
+  /*other-intr 作品簡介*/
+  .other-intr{
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  
+  
+  
+  .other-intr .other-videobox{
+  
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  
+  
+  .other-intr .other-videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  
+    border: none;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Live Stream Style
+  --------------------------------------------- 
+  */
+  .down-content h4 {
+    margin-top: 8px;
+    font-size: 70px;
+    font-weight: 800;
+   
+  }
+  
+  .down-content p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(206, 206, 206);
+  }
+  
+  /* 
+  ---------------------------------------------
+  Featured Banner Style
+  --------------------------------------------- 
+  */
+  .feature-banner{
+    margin: 20px 0px;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Game Details Style
+  --------------------------------------------- 
+  */
+  
+  .game-details h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  
+  .game-details .content {
+    border-radius: 23px;
+    padding: 20px;
+    background-color: #1f2122;
+  }
+  
+  .content p{
+    color: rgb(233, 233, 233);
+  margin: 20px 0px;
+  text-align: center;
+  }
+  
+  .left-info h1{
+    color: #666;
+    display: block;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  
+  .game-details .content .left-info {
+    background-color: #27292a;
+    border-radius: 23px;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .game-details .content .left-info span {
+    color: #666;
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+  }
+  
+  .right-info h1{
+    color: #666;
+    display: block;
+    margin-top: 30px;
+    font-weight: 700;
+  
+  } 
+  
+  /* 
+  ---------------------------------------------
+  Other Related Style
+  --------------------------------------------- 
+  */
+  
+  /* 
+  ---------------------------------------------
+  Top Streamers Style
+  --------------------------------------------- 
+  */
+  
+  /* 
+  ---------------------------------------------
+  Profile Style
+  --------------------------------------------- 
+  */
+  
+  .main-profile {
+    border-radius: 23px;
+    padding: 30px;
+    background-color: #1f2122;
+  }
+  
+  .main-profile img{
+    border-radius: 23px;
+    padding: 0px;
+    
+  }
+  
+  .main-profile a{
+    font-size: 14px;
+    color: rgb(233, 233, 233);
+    
+  }
+  
+  .main-profile a:hover {
+      color: #F99;
+  }
+  
+  .main-profile .main-info h4 {
+    margin-bottom: 20px;
+  }
+  
+  .main-profile ul {
+    border-radius: 23px;
+    padding: 30px;
+    background-color: #27292a;
+  }
+  
+  .main-profile ul li {
+    width: 100%;
+    font-size: 14px;
+    color: rgb(233, 233, 233);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666;
+  }
+  
+  
+  
+  .main-profile ul li span {
+    float: right;
+    font-weight: 500;
+    color: #ff8024;
+  }
+  
+  
+  
+  .main-profile ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .clips {
+    margin-top: 30px;
+    border-top: 2px solid #27292a;
+  }
+  
+  .clips .heading-section {
+    margin-top: 30px;
+  }
+  
+  .clips .item  {
+    border-radius: 23px;
+    padding: 30px 15px;
+    background-color: #27292a;
+    margin-bottom: 30px;
+  }
+  
+  .clips .item .thumb {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .clips .item h4 {
+    font-size: 15px;
+    display: inline-block;
+  }
+  
+  /* 
+  ---------------------------------------------
+  Responsive Style
+  --------------------------------------------- 
+  */
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+  
+    .main-banner {
+      text-align: center;
+      color: #000;
+      padding: 20px 15px;
+    }
+  
+    .main-banner2 {
+      text-align: center;
+      color: #000;
+      padding: 20px 15px;
+    }
+    .main-banner h4 {
+      font-size: 20px;
+    }
+  
+    .main-banner h6 {
+      font-size: 15px;
+    }
+  
+    
+      .other-videobox{
+        padding: 0;
+      }
+  
+      .left-info h2{
+        font-size: 30px;
+      }	
+    
+      .footer p{
+      
+      font-size: 16px;
+      line-height: 50px;
+    
+      }
+      .footer-logo{
+        width: 250px;
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+      .instagram-media { 
+    
+        margin: 0 auto !important; 
+        max-width:326px !important; 
+        
+      }
+  }
+  
+  @media (max-width: 992px) {
+    .heading-section h4 {
+      font-size: 20px;
+    }
+    .main-profile .main-info {
+      margin: 45px 0px;
+    }
+  
+  .main-profile{
+    border-radius: 2px;
+    padding: 1px;
+    background-color: #1f2122;
+  }
+  .main-profile img{
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+    .footer-logo{
+      width: 250px;
+      padding-left: 50px;
+      padding-right: 40px;
+    }
+  
+  }
+  
+  @media (max-width: 1200px) {
+    .nav {
+      
+      background-color: #ffffff;
+    }
+    
+    .header-area .main-nav .logo {
+      
+      border-right: none;
+    }
+  }

@@ -1,0 +1,271 @@
+
+
+
+/*選取開頭為banner-*/
+[class^="banner-"]{
+	position: absolute;
+}
+.banner-001{ width: 10%;top: 50%;left: 0%;}
+.banner-002{ width: 5%;top: 50%;right: 15%;}
+.banner-003{ width: 10%;top: -5%;left: 10%;}
+.banner-004{ width: 10%;top: 50%;right: 5%}
+
+/*index work*/
+
+
+/*teams banner*/
+
+.banner-005{ width: 10%;top: 50%;right: 5%}
+.banner-006{ width: 10%;top: 100%;left: -5%}
+.banner-007{ width: 10%;top: 30%;left: 40%}
+.banner-008{ width: 10%;top: 50%;left: -10%}
+.banner-009{ width: 10%;top: 70%;left: 80%}
+.banner-010{ width: 10%;top: 80%;left: 35%}
+.banner-011{ width: 10%;top: 100%;left: -15%}
+.banner-012{ width: 10%;top: 110%;left: 30%}
+.banner-013{ width: 10%;top: 150%;left: 65%}
+
+
+
+
+
+
+
+
+@media (min-width: 992px){
+.banner-003{ width: 10%;top: -50%;left: 10%;}
+.banner-004{ width: 10%;top: 50%;right: 5%}
+}
+@media (max-width: 992px){
+.banner-005{ width: 15%;top: 0%;right: 5%}
+.banner-006{ width: 30%;top: 90%;left: 0%}
+.banner-007{ width: 30%;top: 31%;left: 40%}
+.banner-008{ width: 30%;top: 50%;left: 0%}
+.banner-009{ width: 30%;top: 70%;left: 80%}
+.banner-010{ width: 30%;top: 65%;left: 35%}
+.banner-011{ width: 30%;top: 100%;left: 1%}
+.banner-012{ width: 30%;top: 100%;left: 80%}
+.banner-013{ width: 30%;top: 90%;left: 80%}
+}
+
+
+/*漂浮*/
+.fioot{
+	animation: floot 1s 7s ;
+	animation-iteration-count: infinite;
+}
+.fioot2{
+	animation: floot2 1.5s 7s ;
+	animation-iteration-count: infinite;
+}
+.fioot3{
+	animation: floot3 1s 7s ;
+	animation-iteration-count: infinite;
+}
+@keyframes floot{
+0% { transform:translateX(2px);}
+
+50% {transform:translateX(5px);}
+100% {transform:translateX(2px);}
+}
+@keyframes floot2{
+0% { transform:rotate(-15deg);}
+50% {transform:rotate(15deg);}
+100% { transform:rotate(-15deg);}
+}
+}
+@keyframes floot3{
+0% { transform:translateX(2px);}
+50% {transform:translatey(5px);}
+100% {transform:translateX(2px);}
+}
+/*主視覺圖*/
+.hole{	
+	border-radius: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	animation: hole-1 2.5s 2s forwards;
+}
+@keyframes hole-1{
+	0%{width: 0px;height: 0px;top: 0%;}
+	10%{top: 50%;width: 10px;height: 10px;}
+	20%{top: 30%;}
+	30%{top: 50%;}
+	45%{top: 40%;width: 10px;height: 10px}
+	60%{top: 70%;}
+	100%{width: 45%;height: 10%;}
+}
+@media (min-width: 768px){
+	@keyframes hole-1{
+	0%{width: 0px;height: 0px;top: 0%;}
+	10%{top: 50%;width: 20px;height: 20px;}
+	20%{top: 30%;}
+	30%{top: 50%;}
+	45%{top: 40%;width: 20px;height: 20px}
+	60%{top: 70%;}
+	100%{width: 45%;height: 10%;}
+}
+}
+.bannner-com{
+	width: 0%;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	animation: com-1 1s 4s forwards;
+
+	z-index: 3;
+}
+@keyframes com-1{
+	0%{width:0%;top: 70%;}
+	50%{top:45%;}
+	100%{width: 35%;}
+}
+.keyboard{
+	width: 0%;
+	position: absolute;
+	top: 80%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+
+	animation: keybo-1 1s 4.5s forwards;
+	z-index: 5;
+}
+@keyframes keybo-1{
+	0%{width:0%;top: 70%;}
+	50%{top:45%;}
+	100%{width: 35%;}
+}
+.banner-logo{
+	width: 0%;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	animation: logo-1 1s 5.5s forwards ;
+	z-index: 4;
+
+}
+@keyframes logo-1{
+	0%{width: 0%;}
+	20%{width: 0%;}
+	50%{width: 50%;}
+	100%{width: 35%;}
+}
+.banner-play{
+	width: 0%;
+	position: absolute;
+	top: 50%;left: 50%;
+	
+	animation: play-1 1.5s 5.5s forwards;
+}
+@keyframes play-1{
+	0%{width: 0%;}
+	50%{width: 10%;top: 50%;left: 50%;}
+	100%{width: 10%;top: 10%;left: 10%;}
+
+}
+
+.controller{
+	width: 0%;
+	position: absolute;
+	bottom: 20%;
+	right: 18%;
+	-webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+
+	animation: cont-1 1.5s 5.8s forwards;
+
+}
+@keyframes cont-1{
+	0%{width: 0%;}
+	50%{width: 0%;bottom: 50%;right: 50%;}
+	100%{width: 10%;bottom: 20%;right: 18%;}
+}
+.audio{
+	width: 0%;
+	position: absolute;
+	bottom: 15%;
+	left: 0%;
+
+	animation: audio-1 1.5s 6s forwards;
+
+}
+@keyframes audio-1{
+	0%{width: 0%;}
+	50%{width: 0%;bottom: 50%;left: 50%;}
+	100%{width: 15%;bottom: 15%;left: 0%;}
+
+}
+.books{
+	width: 0%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+
+	animation: books-1 1.5s 6.25s forwards;
+}
+@keyframes books-1{
+	0%{width: 0%;}
+	50%{width: 0%;top: 50%;right: 50%;}
+	100%{width: 10%;top: 10%;right: 15%;}
+}
+.sound{
+	width: 0%;
+	position: absolute;
+	bottom: 25%;
+	left: 20%;
+
+	animation: sound-1 1.5s 6.5s forwards;
+
+}
+@keyframes sound-1{
+	0%{width: 0%;}
+	50%{width: 0%;bottom: 50%;left: 50%;}
+	100%{width: 10%;bottom: 25%;left: 20%;}
+
+}
+.clapper{
+	width: 0%;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+
+	animation: clapper-1  1.5s 6.75s forwards;
+}
+@keyframes clapper-1{
+	0%{width: 0%;}
+	50%{width: 0%;top: 50%;right: 50%;}
+	100%{width: 10%;top: 50%;right: 5%;}
+}
+
+
+.banner-tv{
+	width: 0%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+
+	animation: banner-tv 1.5s 7s forwards;
+
+}
+@keyframes banner-tv{
+	0%{width: 0%;}
+	50%{width: 0%;top: 50%;right: 50%;}
+	100%{width: 10%;top: 18%;right: 8%;}
+}
+
+
+
+
+
+

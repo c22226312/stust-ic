@@ -1,0 +1,9 @@
+@charset "utf-8";
+.container p img {
+    width: 0px;
+}
+.sponsor.givePadding .container p {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-size: medium;
+}
